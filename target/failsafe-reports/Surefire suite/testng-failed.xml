@@ -7,4 +7,20 @@
       <class name="com.bizweb.demo.selenium.testcases.LoginBW"/>
     </classes>
   </test> <!-- Surefire test -->
+  <test name="Surefire test(failed)" parallel="methods">
+    <classes>
+      <class name="com.bizweb.demo.selenium.testcases.LoginBW">
+        <methods>
+          <include name="clearCookies"/>
+          <include name="caseDungx"/>
+        </methods>
+      </class> <!-- com.bizweb.demo.selenium.testcases.LoginBW -->
+      <class name="com.bizweb.demo.selenium.testcases.CreateOrderBW">
+        <methods>
+          <include name="instantiateDriverObject"/>
+          <include name="closeDriverObjects"/>
+        </methods>
+      </class> <!-- com.bizweb.demo.selenium.testcases.CreateOrderBW -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

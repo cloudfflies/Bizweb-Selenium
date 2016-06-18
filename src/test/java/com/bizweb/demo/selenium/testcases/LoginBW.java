@@ -26,8 +26,12 @@ public class LoginBW extends DriverFactory {
         return driver;
     }
 
-//    @Test
+    @Test
     public void caseDung() throws Exception {
         inputUsernameAndPasswordAndclickButton("https://anteo.bizwebvietnam.net", "cloudfflies@gmail.com", "123456");
+    }
+    @Test
+    public void caseDungx() throws Exception {
+        inputUsernameAndPasswordAndclickButton("https://anteo1.bizwebvietnam.net", "cloudfflies@gmail.com", "123456");
     }
 }

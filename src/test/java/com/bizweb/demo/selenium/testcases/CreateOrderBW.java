@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 
 public class CreateOrderBW extends DriverFactory{
-    @Test
+//    @Test
     private void createOneOrder() throws Exception {
         WebDriver driver = DriverFactory.getDriver();
 
